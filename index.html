@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interview Platform</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add styles.css for styling -->
+</head>
+<body>
+    <header>
+        <h1>AI-Powered Interview Platform</h1>
+    </header>
+
+    <main>
+        <!-- Section for Coding Assessment -->
+        <section id="coding-assessment">
+            <h2>Coding Assessment</h2>
+            <form id="coding-form">
+                <label for="code">Write Your Code:</label><br>
+                <textarea id="code" name="code" rows="10" cols="50" placeholder="Write your Python code here..."></textarea><br>
+                
+                <label for="test-cases">Provide Test Cases (JSON Format):</label><br>
+                <textarea id="test-cases" name="test-cases" rows="5" cols="50" placeholder='[{"input": "3\\n", "expected_output": "6"}]'></textarea><br>
+                
+                <button type="submit">Submit Code</button>
+            </form>
+            <div id="coding-result" class="result"></div>
+        </section>
+
+        <!-- Section for Behavioral Assessment -->
+        <section id="behavioral-assessment">
+            <h2>Behavioral Assessment</h2>
+            <form id="behavioral-form">
+                <label for="response">Describe Your Strengths and Working Style:</label><br>
+                <textarea id="response" name="response" rows="5" cols="50" placeholder="Write your response here..."></textarea><br>
+                
+                <button type="submit">Submit Response</button>
+            </form>
+            <div id="behavioral-result" class="result"></div>
+        </section>
+
+        <!-- Section for Results -->
+        <section id="results">
+            <h2>Results</h2>
+            <button id="fetch-results">View Full Report</button>
+            <div id="report" class="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 AI Interview Platform. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Add script.js for JavaScript functionality -->
+</body>
+</html>
